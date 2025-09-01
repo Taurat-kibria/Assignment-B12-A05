@@ -32,10 +32,13 @@ for (const tem of AllCard) {
         }
         document.getElementById('gold_count').innerText = token
 
-        // call history funtionality
 
-        // document.getElementById('call_his_tit').innerText = cardTittle
-        // document.getElementById('call_his_num').innerText = cardNum
+
+        
+
+
+
+        // call history funtionality
 
         const time = new Date().toLocaleTimeString();
 
@@ -67,6 +70,18 @@ for (const tem of AllCard) {
 
 
     })
+
+    // copy btn features
+        tem.querySelector('.copy_btn')
+         .addEventListener('click', function(){
+            let copyCount = parseInt(document.getElementById('copy_count').innerText)
+            copyCount += 3;
+            document.getElementById('copy_count').innerText = copyCount;
+            const cardNum = tem.querySelector('.card_num').innerText
+
+            navigator.clipboard.writeText(cardNum);
+
+         })
 
 
 }
