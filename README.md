@@ -10,6 +10,15 @@
          Input it's innerText or innerHTML<br>
          Get access to parent node in which I want to insert the element.<br>
          Now in the parent node just insert with appendChild()<br>
+
+3. What is Event Bubbling and how does it work?<br>
+   Ans: When an event occurs on an element it propagates through upwards to it parent and this process continues until it reaches the root of the program.
+
+4. What is Event Delegation in JavaScript? Why is it useful?<br>
+   Ans: It is an way of handeling event where a single event listener is attached to parent element to control the event triggered by it's child elements.
+
+5. What is the difference between preventDefault() and stopPropagation() methods?<br>
+   Ans: preventDefault() stops default action eg. forms reloading and stopPropagation() stops the event bubling.
    
 
    
