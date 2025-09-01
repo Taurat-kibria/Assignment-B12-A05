@@ -39,8 +39,8 @@ for (const tem of AllCard) {
 
         const time = new Date().toLocaleTimeString();
 
-        let chilEl = document.createElement('div')
-        chilEl = `
+        let div = document.createElement('div')
+        div.innerHTML = `
             <div class="flex justify-between items-center bg-[#fafafa]
              rounded-lg p-4 mt-4 ">
 
@@ -57,12 +57,22 @@ for (const tem of AllCard) {
                 </div>
             </div>
             `
-        document.getElementById('call_his_parent').appendChild(chilEl)
+        // clear btn funtionality
+        document.getElementById('call_his_parent').appendChild(div)
+        document.getElementById("clear_btn")
+            .addEventListener('click', function () {
+                div.innerHTML = ``
+
+            })
+
 
     })
 
 
 }
+
+
+
 
 
 
