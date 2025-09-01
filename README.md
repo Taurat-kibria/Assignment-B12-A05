@@ -5,11 +5,11 @@
    
 2. How do you create and insert a new element into the DOM?
    <br>
-   Ans: Steps:
-         Create a new element with document.createEliment()
-         Input it's innerText or innerHTML
-         Get access to parent node in which I want to insert the element.
-         Now in the parent node just insert with appendChild()
+   Ans: Steps:<br>
+         Create a new element with document.createEliment()<br>
+         Input it's innerText or innerHTML<br>
+         Get access to parent node in which I want to insert the element.<br>
+         Now in the parent node just insert with appendChild()<br>
    
 
    
